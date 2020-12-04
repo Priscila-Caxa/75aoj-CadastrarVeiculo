@@ -1,16 +1,12 @@
 package com.example.demo.services;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-
+import com.example.demo.repository.Veiculo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.domain.Demanda;
-import com.example.demo.domain.TipoCarga;
-import com.example.demo.repository.DemandaRepository;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 
 @Service
@@ -20,7 +16,7 @@ public class DBService {
 
 	
 	@Autowired
-	private DemandaRepository demandaRepository;
+	private VeiculoRepository veiculoRepository;
 
 	public void instantiateTestDataBase() throws ParseException {
 		
@@ -30,13 +26,17 @@ public class DBService {
 DateFormat dt = new SimpleDateFormat("dd/MM/yyyy");
 
 		
-		Demanda demanda1 = new Demanda(null, "Rafael Campos", "teste@teste.com", "36709295848", TipoCarga.CARGA_VIVA, "casa", "125", "casa",
-				"centro", "09850010", "09870440", "diadema", "sao paulo", "casa",
-				"casa", "centro", "09850101", "sao paulo",
-				"rio", dt.parse("20/12/2020"), dt.parse("01/01/2021"), 15.500, "974196599");
+		Veiculo veiculo1;
+		veiculo1 = new veiculo(null,
+				"01",
+				"Iveco",
+				"Daily",
+				"DPJ1234",
+				"VUC",
+				"2.000kg",
+				"174x66x5mm");
 
-		
-		demandaRepository.save(demanda1);
+		veiculoRepository.save(veiculo1);
 		
 		
 		

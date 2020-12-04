@@ -31,12 +31,12 @@ public class SwaggerConfig {
 	private  ApiInfo  metaInfo () {
 
         ApiInfo apiInfo =  new  ApiInfo (
-                "Cadastro de demandas" ,
-                " API REST de Cadastro de demandas" ,
+                "Cadastro de veiculos" ,
+                " API REST de Cadastro de veiculos" ,
                 " 1.0 " ,
                 " Termos de Serviço " ,
-                new  Contact ( "Rafael Campos" , "-" ,
-                        "rafaelfiap@fiap.com" ),
+                new  Contact ( "Priscila Caxa" , "-" ,
+                        "priscila.pastrofiap@fiap.com" ),
                 "-" ,
                 "-" , new  ArrayList < VendorExtension > ()
         );
