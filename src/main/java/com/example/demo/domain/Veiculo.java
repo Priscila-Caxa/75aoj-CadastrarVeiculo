@@ -33,9 +33,7 @@ public class Veiculo implements Serializable{
 	}
 
 	public String getModelo() {
-		return modelo;
-	}
-
+		return modelo
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
