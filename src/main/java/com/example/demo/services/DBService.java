@@ -20,29 +20,7 @@ public class DBService {
 
 	public void instantiateTestDataBase() throws ParseException {
 		
-		
-		
-		
-DateFormat dt = new SimpleDateFormat("dd/MM/yyyy");
-
-		
-		Veiculo veiculo1;
-		veiculo1 = new veiculo(null,
-				"01",
-				"Iveco",
-				"Daily",
-				"DPJ1234",
-				"VUC",
-				"2.000kg",
-				"174x66x5mm");
-
-		veiculoRepository.save(veiculo1);
-		
-		
-		
-
-		
-		
+	
 	}
 
 }
